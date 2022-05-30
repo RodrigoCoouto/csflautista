@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -28,22 +30,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
-        child: Container(color: Colors.red),
+        child: Container(
+          color: Colors.black,
+          child: Image.asset('assets/images/siteCsantigo.png'),
+        ),
       ),
     );
   }
