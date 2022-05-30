@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:cs_flautista/app/modules/home/presenter/home_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,34 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
-          color: Colors.black,
-          child: Image.asset('assets/images/siteCsantigo.png'),
-        ),
-      ),
+      title: 'cs-flautista',
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFEFEFEF)),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(title: 'Home Page'),
     );
   }
 }
